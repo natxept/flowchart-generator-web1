@@ -43,4 +43,7 @@
 | Assets | รูปภาพ / วิดีโอพื้นหลัง |
 
 ---
+| หน้าแรก | หน้า Dashboard |
+|---------|----------------|
+| ![หน้าแรก](images/index.png) | ![Dashboard](images/generate.png) |
 
