@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual | Flowchart Generator</title>
+    <link rel="stylesheet" href="css/manual.css">
+</head>
+
+<body>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="videos/background4.mp4" type="video/webm">
+            <track src="subtitles/subtitle.vtt" kind="subtitles" srclang="en" label="English">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="index.html" class="logo-web">Flowchart Generator</a>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="generator.html">Generator</a></li>
+                <li><a href="manual.html">Manual</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Area START -->
+    <div class="container-manual">
+        <div class="content">
+            <h1 class="test">คู่มือการใช้งาน</h1>
+            <div class="container-box">
+                <div class="box1">
+                    <h2 class="head1">วิธีใช้งาน</h2>
+                    <ol class="text-box1">
+                        <li>ป้อนรายละเอียดโฟลว์ชาร์ต: กรุณาป้อนข้อมูลที่จำเป็นเกี่ยวกับโฟลว์ชาร์ตของคุณให้ครบถ้วน</li>
+                        <li>สร้างโฟลว์ชาร์ต: คลิกที่ปุ่ม "Generate Chart" เพื่อสร้างโฟลว์ชาร์ตของคุณ</li>
+                        <li>ดูผลลัพธ์: โฟลว์ชาร์ตที่สร้างขึ้นจะแสดงผลในส่วน "Display" ด้านซ้ายของหน้า</li>
+                        <li>แก้ไขโค้ด: ผู้ใช้สามารถคลิกที่ปุ่ม "Edit" เพื่อทำการแก้ไขโค้ด Mermaid ด้วยตนเอง</li>
+                        <li>บันทึกโฟลว์ชาร์ต: สามารถบันทึกโฟลว์ชาร์ตเป็นไฟล์ SVG ได้โดยการคลิกที่ปุ่ม "Download SVG"</li>
+                    </ol>
+                </div>
+                <div class="box2">
+                    <h2 class="head2">ตัวอย่าง</h2>
+                    <div class="example-box">
+                        <p>Prompt Entry</p>
+                        <textarea readonly name="example1" id="example-textarea" p>calculating university grades based on scores</textarea>
+                    </div>
+                    <div class="example-container2">
+                        <p class="text-display">Display</p>
+                        <div class="ex-box">
+                            <img class="img-ex" id="clickableImage" src="images/chartex.svg" alt="example-flowchart">
+                        </div>
+                    </div>
+                </div>
+                <div class="box3">
+                    <h2 class="head3">FAQ</h2>
+                    <ol class="text-box3">
+                        <li class="li1">
+                            สามารถสร้างระบบที่มีความซับซ้อนได้ไหม?
+                            <p>ตอบ: ได้ครับ ความซับซ้อนของระบบขึ้นอยู่กับรายละเอียดที่ผู้ใช้กรอกใน prompt หากกรอกข้อมูลอย่างครบถ้วน ระบบจะสามารถสร้างโฟลว์ชาร์ตที่ตรงตามต้องการได้</p>
+                        </li>
+                        <li>
+                            สามารถแก้ไขโฟลว์ชาร์ตได้ไหม?
+                            <p>ตอบ: ใช่ครับ เราได้สร้างปุ่ม "Edit" เพื่อให้ผู้ใช้สามารถแก้ไขโค้ดเมอร์เมดโดยตรง ซึ่งช่วยให้มีความยืดหยุ่นมากขึ้นในการสร้างโฟลว์ชาร์ตตามต้องการ</p>
+                        </li>
+                        <li>
+                            สามารถกรอกแค่ชื่อของระบบได้ไหม โดยไม่ใส่รายละเอียดของโฟลว์ชาร์ต?
+                            <p>ตอบ: ได้ครับ แต่กรณีนี้อาจทำให้ขั้นตอนของโฟลว์ชาร์ตไม่ตรงตามความต้องการที่แท้จริงของผู้ใช้</p>
+                        </li>
+                        <li>
+                            เว็บไซต์นี้รองรับภาษาอะไรบ้าง?
+                            <p>ตอบ: ปัจจุบันเว็บไซต์รองรับสองภาษา คือ ภาษาไทยและภาษาอังกฤษ</p>
+                        </li>
+                    </ol>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content Area END -->
+
+    <footer>
+        <p>&copy; <span id="year"></span> Flowchart Generator. All rights reserved.</p>
+    </footer>
+
+    <script src="js/img.js"></script>
+    <script>
+        // Script to display current year
+        document.getElementById("year").innerText = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

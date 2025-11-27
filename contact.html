@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Flowchart Generator</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="videos/background4.mp4" type="video/webm">
+            <track src="subtitles/subtitle.vtt" kind="subtitles" srclang="en" label="English">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="index.html" class="logo-web">Flowchart Generator</a>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="generator.html">Generator</a></li>
+                <li><a href="manual.html">Manual</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Area START -->
+    <div class="container-manual">
+        <div class="content">
+            <h1 class="test">Contact Us</h1>
+            <div class="container-box">
+                <div class="box1">
+                    <h2 class="head1">นทีภัทร ยามาเจริญ</h2>
+                    <div class="container-data1">
+                        <div class="email-box">
+                            <img class="logo-email" src="images/email.svg" alt="logo-email">
+                            <p class="text-email">164405241014-st@rmutsb.ac.th</p>
+                        </div>
+                        <div class="phone-box">
+                            <img class="logo-phone" src="images/phone-call.svg" alt="logo-phone">
+                            <p class="text-phone">+6662-352-9539</p>
+                        </div>
+                        <div class="local-box">
+                            <img class="logo-local" src="images/location-pin.svg" alt="logo-local">
+                            <p class="text-local">ประเทศไทย</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box2">
+                    <h2 class="head2">กนกพิชญ์ รุณนก</h2>
+                    <div class="container-data2">
+                        <div class="email-box2">
+                            <img class="logo-email2" src="images/email.svg" alt="logo-email2">
+                            <p class="text-mail2">164405241026-st@rmutsb.ac.th</p>
+                        </div>
+                        <div class="phone-box2">
+                            <img class="logo-phone2" src="images/phone-call.svg" alt="logo-phone2">
+                            <p class="text-phone2">+6690-261-2036</p>
+                        </div>
+                        <div class="local-box2">
+                            <img class="logo-local2" src="images/location-pin.svg" alt="logo-local2">
+                            <p class="text-local2">ประเทศไทย</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Content Area END -->
+
+    <footer>
+        <p>&copy; <span id="year"></span> Flowchart Generator. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Script to display current year
+        document.getElementById("year").innerText = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

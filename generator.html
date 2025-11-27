@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowchart Generator UI</title>
+    <link rel="stylesheet" href="css/generator.css">
+</head>
+
+<body>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="videos/background4.mp4" type="video/mp4">
+            <track src="subtitles/subtitle.vtt" kind="subtitles" srclang="en" label="English">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="index.html" class="logo-web">Flowchart Generator</a>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="generator.html">Generator</a></li>
+                <li><a href="manual.html">Manual</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="content">
+        <!-- Flowchart Display Area -->
+        <div class="container-display">
+            <div class="box-node1">
+                <h2 class="node-display">Flow Chart Display</h2>
+                <button id="edit-btn">Edit</button>    <!-- ปุ่ม Edit เล็ก ๆ -->
+            </div>
+            <div id="display-area"></div>
+        </div>
+        
+        <!-- Prompt Entry Area -->
+        <div class="container-prompt">
+            <div class="box-node2">
+                <h2 class="node-prompt">Prompt Entry</h2>
+                <button id="clear-btn">Clear</button> <!-- ปุ่ม Edit เล็ก ๆ -->
+            </div>
+            <form id="flowchartForm">
+                <div class="box2-node2">
+                    <textarea id="prompt-input" placeholder="Enter your flow chart description here..."></textarea>
+                    <button type="submit" id="generate-chart">Generate Chart</button>
+                    <button type="button" id="download-svg">Download SVG</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal test -->
+    <!-- Edit Modal -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Edit Mermaid Code</h2>
+            <textarea id="mermaidCodeInput" rows="10" placeholder="Edit your Mermaid code here..."></textarea>
+            <button id="saveChanges">Save Changes</button>
+        </div>
+    </div>
+    <!-- Modal test -->
+    
+    <footer>
+        <p>&copy; <span id="year"></span> Flowchart Generator. All rights reserved.</p>
+    </footer>
+
+    <script src="js/generate.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/clear.js"></script>
+    <script>
+        // Script to display current year
+        document.getElementById("year").innerText = new Date().getFullYear();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+
+
+</body>
+
+</html>
