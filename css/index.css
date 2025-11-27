@@ -1,0 +1,140 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #1b1b1b;
+    padding: 10px 20px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Website Logo/Name on the left */
+.navbar-logo a {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Navbar Links on the right */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links li a {
+    color: rgb(119, 119, 119);
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+/* Effect when hovering over the link */
+.navbar-links li a:hover {
+    transform: translateY(-5px);
+    color: #ffffff;
+}
+
+button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    width: 200px;
+    height: 80px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #f7efc7;
+    color: rgb(0, 0, 0);
+    font-weight: bold; /* ทำให้ตัวอักษรหนา */
+    font-size: 30px;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* การเปลี่ยนแปลงใน 0.3 วินาที */
+    opacity: 0; /* เริ่มต้นที่โปร่งใส */
+    transform: translateY(10px); /* เริ่มที่เลื่อนลง */
+    animation: fadeIn 3s forwards; /* เรียกใช้งาน animation */
+    animation-delay: 1s; /* หน่วงเวลาในการแสดง */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* ทำให้โปร่งใส */
+        transform: translateY(0); /* เลื่อนกลับไปที่ตำแหน่งเดิม */
+    }
+}
+
+button:hover {
+    background-color: #5f5f5f;
+    transform: scale(1.1); /* ขยายเมื่อวางเมาส์ */
+}
+
+/* ตั้งค่าพื้นหลังวิดีโอ */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* ทำให้วิดีโออยู่ด้านหลัง */
+}
+
+/* จัดการการแสดงผลของวิดีโอ */
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ทำให้วิดีโอครอบคลุมพื้นที่ทั้งหมดโดยไม่เสียอัตราส่วน */
+}
+
+/* เนื้อหาที่อยู่เหนือวิดีโอ */
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+footer {
+            background-color: rgba(119, 119, 119, 0.5); /* Semi-transparent background */
+            border-radius: 8px;
+            backdrop-filter: blur(2px); /* Blur effect */
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+            font-size: 14px;
+            color: #ffffff;
+        }
+
+.container-home {
+
+    border-radius: 8px;
+    padding: 1px;
+    margin-top: 200px;
+    width: 100%;
+
+}
