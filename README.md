@@ -45,5 +45,5 @@
 ---
 | หน้าแรก | หน้า Dashboard |
 |---------|----------------|
-| ![หน้าแรก](src/index.png) | ![Dashboard](src/generate.png) |
+| ![หน้าแรก](src/index.PNG) | ![Dashboard](src/generate.PNG) |
 
