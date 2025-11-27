@@ -27,8 +27,9 @@
 - หน้า Manual คู่มือการใช้งาน
 - หน้า Contact
 
-### ✔ 4. อธิบายการใช้งาน  
-มีไฟล์เมนู Manual อธิบายและแสดงตัวอย่างการใช้งาน
+### ✔ 4. มีตัวอย่างการใช้งานให้ผู้ใช้เข้าใจได้ง่าย
+ภายในเว็บมี ตัวอย่างข้อความ ที่ป้อนเข้าไปเพื่อสร้าง Flowchart
+ช่วยให้ผู้ใช้เริ่มใช้งานได้ทันที
 
 ---
 
@@ -38,8 +39,8 @@
 |------|-----------|
 | Frontend | HTML, CSS, JavaScript |
 | Diagram Engine | Mermaid.js |
-| UI/UX | Custom design |
-| Assets | Images + Video tutorial |
+| UI/UX | Custom design + Background Video |
+| Assets | รูปภาพ / วิดีโอพื้นหลัง |
 
 ---
 
