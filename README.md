@@ -43,7 +43,7 @@
 | Assets | รูปภาพ / วิดีโอพื้นหลัง |
 
 ---
-| หน้าแรก | หน้า Dashboard |
-|---------|----------------|
+| หน้าแรก (index) | หน้า Generate Flowchart | หน้า Manual คู่มือการใช้งาน | หน้า Contact |
+|---------|----------------|----------------|----------------|
 | ![หน้าแรก (index)](src/index.PNG) | ![หน้า Generate Flowchart](src/generate.PNG) | ![หน้า Manual คู่มือการใช้งาน](src/manual.PNG) | ![หน้า Contact](src/contact.PNG) |
 
