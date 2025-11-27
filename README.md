@@ -51,9 +51,3 @@
 | ![หน้าแรก (index)](src/index.PNG) | ![หน้า Generate Flowchart](src/generate.PNG) | ![หน้า Manual คู่มือการใช้งาน](src/manual.PNG) | ![หน้า Contact](src/contact.PNG) |
 
 ---
-
-## ⚡ วิธีใช้งาน
-
-1. Clone โปรเจกต์นี้:  
-```bash
-git clone https://github.com/username/flowchart-generator.git
